@@ -4,4 +4,86 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+      
     block content
+   .topnav
+      a.active(href='#home') Home
+      a(href='#saved-articles') Saved Articles
+      a(href='#read-new-articles') Read New Articles
+      a(href='#about')
+    div(style='padding-left:16px')
+      h2 Real World News, No Partisan Bias
+  
+      //img(style='position: absolute; top: 20; right: 0; border: 0;', src='https://cdn1.imggmi.com/uploads/2019/3/11/5cac3774f076f7b6ed73731d267ecacb-full.jpg')
+      img(style='position: relative right: 180px; ', src = 'https://cdn1.imggmi.com/uploads/2019/3/11/ef2187e3f8341fb99a822ee5cae898a1-full.jpg')
+
+      html
+  head
+    meta(charset='UTF-8')
+    title NoteTaker
+    
+    style(media='screen').
+      body {
+      text-align: center;
+      background-color: cornflowerblue;
+      }
+      h1 {
+      font-size: 40px;
+      color: white;
+      }
+      .delete {
+      margin-left: 20px;
+      color: red;
+      cursor: pointer;
+      text-align: right;
+      }
+      input {
+      width: 400px;
+      height: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 42px;
+      background-color: antiquewhite;
+      }
+      textarea {
+      width: 400px;
+      height: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 24px;
+      background-color: antiquewhite;
+      }
+      .data-title {
+      cursor: pointer;
+      font-size: 24px;
+      }
+      #results {
+      width: 400px;
+      height: 200px;
+      overflow: auto;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: antiquewhite;
+      }
+      #action-button {
+      display: inline-block;
+      }
+      #buttons {
+      margin: 20px;
+      }
+  body
+    h1 Write a Note on an Article
+    #user-input
+      p Title
+      input#title(type='text')
+      br
+      p Note
+      textarea#note
+      #buttons
+        #action-button
+          button#make-new Submit
+        button#clear-all Delete All Notes
+    #results
+    
+    
+
